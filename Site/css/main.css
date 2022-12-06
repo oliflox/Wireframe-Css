@@ -1,18 +1,198 @@
-/* Error: Expected expression.
- *   ,
- * 5 | background-image: ;
- *   |                   ^
- *   '
- *   scss\body.scss 5:19  @import
- *   scss\main.scss 3:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 5 \2502  background-image: ;\d\a   \2502                    ^\a   \2575 \a   scss\\body.scss 5:19  @import\a   scss\\main.scss 3:9   root stylesheet";
+@font-face {
+  font-family: "Kranafat";
+  src: url(../assets/Font/KranaFat-A.ttf);
 }
+@font-face {
+  font-family: "MonoRegular";
+  src: url(../assets/Font/MonoRegular.ttf);
+}
+@font-face {
+  font-family: "MonoBold";
+  src: url(../assets/Font/MonoBold.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #c93c4c;
+  background-image: url(../assets/image/Illustration_sans_titre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+header .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0.6em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .top-nav div#logo {
+  color: white;
+  font-family: "Kranafat";
+  background-color: #c93c4c;
+  padding: 5px 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+header div {
+  display: flex;
+  justify-content: center;
+}
+header div button {
+  background-color: #ececec;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-family: "MonoBold";
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid rgba(150, 150, 150, 0.452);
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.705);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "MonoRegular";
+  margin: 0;
+  height: 100%;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+}
+
+#profil {
+  background-color: lightblue;
+}
+
+#xp {
+  background-color: lightgreen;
+}
+
+#school {
+  background-color: lightcoral;
+}
+
+#Portfolio {
+  background-color: lightseagreen;
+}
+
+/*# sourceMappingURL=main.css.map */
