@@ -2,15 +2,40 @@
   font-family: 'Kranafat';
   src: url(../assets/Font/KranaFat-A.ttf);
 }
+
 @font-face {
   font-family: 'MonoRegular';
   src: url(../assets/Font/MonoRegular.ttf);
 }
+
 @font-face {
   font-family: 'MonoBold';
   src: url(../assets/Font/MonoBold.ttf);
 }
 
 
-$primary-color:#c93c4c;
-$secondary-color:#ececec;
+$primary-color: #c93c4c;
+$secondary-color: #ececec;
+
+h1,
+h2,
+h3 {
+  font-family: "MonoBold";
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'MonoRegular';
+}
