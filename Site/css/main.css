@@ -60,7 +60,7 @@ header .top-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(201, 60, 77, 0.568627451);
+  background-color: #c93c4d91;
 }
 header .top-nav div#logo {
   color: white;
@@ -206,7 +206,11 @@ section {
 }
 
 #profil {
-  background-color: lightblue;
+  background-color: #ececec;
+  background-image: url(../assets/image/Illustration_sans_titre.png);
+  background-position: 0 65vh, center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 8vh 5%;
 }
 #profil img {
@@ -263,44 +267,11 @@ section {
 
 #school {
   background-color: lightcoral;
+  width: 300vw;
 }
 
 #Portfolio {
   background-color: lightseagreen;
-}
-
-.card {
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-}
-
-.card:nth-child(odd) {
-  background-color: blue;
-}
-
-.card:nth-child(even) {
-  background-color: rgb(0, 183, 255);
-}
-
-.slider-container {
-  width: 80%;
-  height: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-
-.inner-slider {
-  width: 150%;
-  display: flex;
-  gap: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

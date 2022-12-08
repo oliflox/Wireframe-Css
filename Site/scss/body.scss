@@ -21,7 +21,11 @@ section {
 }
 
 #profil {
-  background-color: lightblue;
+  background-color: $secondary-color;
+  background-image: url(../assets/image/Illustration_sans_titre.png); 
+  background-position:0 65vh, center; 
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 8vh 5%;
 
   img {
@@ -88,6 +92,7 @@ section {
 
 #school {
   background-color: lightcoral;
+width: 300vw;
 }
 
 #Portfolio {
