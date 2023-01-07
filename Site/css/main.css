@@ -171,7 +171,7 @@ header .top-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #c93c4d91;
+  background-color: rgba(201, 60, 77, 0.568627451);
 }
 header .top-nav div#logo {
   color: white;
