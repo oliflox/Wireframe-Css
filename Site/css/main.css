@@ -223,9 +223,9 @@ header div button {
 #profil .slider .slide1 {
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 #profil .slider .card {
-  text-align: center;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -320,6 +320,31 @@ header div button {
 }
 #profil .slider .precedent {
   left: 0.6rem;
+}
+
+.slide2 h1 {
+  text-align: center;
+}
+.slide2 .xp {
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(201, 60, 77, 0.6509803922);
+}
+.slide2 .xp .box {
+  display: flex;
+  gap: 20px;
+}
+.slide2 .xp .box img {
+  width: 12vh;
+  height: 12vh;
+}
+.slide2 .xp .box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+.slide2{
+    h1{
+        text-align: center;
+    }
+    .xp{
+        height: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #c93c4da6;
+        .box{
+            img{
+                width: 12vh;
+                height: 12vh;
+            }
+            display: flex;
+            gap: 20px;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
