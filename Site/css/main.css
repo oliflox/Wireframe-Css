@@ -23,15 +23,15 @@ h3 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p {
@@ -88,6 +88,7 @@ header {
   justify-content: end;
 }
 header .top-nav {
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,7 +96,7 @@ header .top-nav {
   color: black;
   padding: 0.6em;
   position: fixed;
-  top: 0;
+  top: -1px;
   width: 100%;
   background-color: rgba(201, 60, 77, 0.568627451);
 }
@@ -241,6 +242,32 @@ header div button {
   position: absolute;
   top: 100vh;
   left: 0;
+  padding: 8vh 3vh;
+  background-color: rgba(240, 128, 128, 0.4);
+}
+#profil .slider .card img {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+#profil .slider .card .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#profil .slider .card #name {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+#profil .slider .card #name div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#profil .slider .card #name div h4 {
+  font-weight: normal;
 }
 #profil .slider .img_slider {
   opacity: 0;
@@ -260,10 +287,10 @@ header div button {
   z-index: 100;
 }
 #profil .slider .suivant {
-  right: 0.4rem;
+  right: 0.6rem;
 }
 #profil .slider .precedent {
-  left: 0.4rem;
+  left: 0.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

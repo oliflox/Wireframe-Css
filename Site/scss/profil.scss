@@ -4,47 +4,77 @@
     background-position: 0 65vh, center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
     .slider {
-      height: 100vh;
-  
-      .card {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 100vh;
-        left: 0;
-      }
-  
-      .img_slider {
-        opacity: 0;
-        transition: 0.5s;
-      }
-  
-      .active {
-        opacity: 1;
-        transition: 0.5s;
-      }
-  
-      .suivant,
-      .precedent {
-        color: $primary-color;
-        font-size: 2em;
-        position: absolute;
-        top: 150vh;
-        transform: translateY(-50%);
-        z-index: 100;
-      }
-  
-      .suivant {
-        right: 0.4rem;
-      }
-  
-      .precedent {
-        left: 0.4rem;
-      }
-  
+        height: 100vh;
+
+        .card {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 100vh;
+            left: 0;
+            padding: 8vh 3vh;
+            background-color: rgba(240, 128, 128, 0.4);
+
+            img {
+                width: 8vh;
+                height: 8vh;
+                border-radius: 50%;
+                margin: 10px 0;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            #name{
+                display: flex;
+                gap: 15px;
+                margin: 15px 0;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h4{
+                        font-weight: normal;
+                    }
+                }
+            }
+
+        }
+
+        .img_slider {
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .active {
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .suivant,
+        .precedent {
+            color: $primary-color;
+            font-size: 2em;
+            position: absolute;
+            top: 150vh;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+
+        .suivant {
+            right: 0.6rem;
+        }
+
+        .precedent {
+            left: 0.6rem;
+        }
+
     }
-  
-  }
+
+}
