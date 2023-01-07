@@ -1,0 +1,50 @@
+#profil {
+    background-color: $secondary-color;
+    background-image: url(../assets/image/Illustration_sans_titre.png);
+    background-position: 0 65vh, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .slider {
+      height: 100vh;
+  
+      .card {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+      }
+  
+      .img_slider {
+        opacity: 0;
+        transition: 0.5s;
+      }
+  
+      .active {
+        opacity: 1;
+        transition: 0.5s;
+      }
+  
+      .suivant,
+      .precedent {
+        color: $primary-color;
+        font-size: 2em;
+        position: absolute;
+        top: 150vh;
+        transform: translateY(-50%);
+        z-index: 100;
+      }
+  
+      .suivant {
+        right: 0.4rem;
+      }
+  
+      .precedent {
+        left: 0.4rem;
+      }
+  
+    }
+  
+  }

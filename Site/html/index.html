@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/main.css" />
 
   <meta charset="UTF-8" />
@@ -31,44 +34,33 @@
   </header>
 
   <section id="profil">
-    <aside style="height: 20vh;">
-      <h1>Mon profil</h1>
-      <img src="../assets/image/moi.jpg" alt="Photo de Florian COLLARD">
-    </aside>
-    <aside style="height: 25vh;">
-      <h2>Informations personnelles</h2>
-      <div class="info">
-        <div class="info1">
-          <h3>Email</h3>
-          <p>lorem ipsum</p>
-        </div>
-        <div class="info2">
-          <h3>Tel.</h3>
-          <p>lorem ipsum</p>
-        </div>
-        <div class="info3">
-          <h3>Adresse</h3>
-          <p>lorem ipsum</p>
+    <div class="slider">
+      
+      <div class="precedent">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div class="slide1 img_slider active">
+        <div class="card">
+          <h1>wesh</h1>
         </div>
       </div>
-    </aside>
-    <aside id="competence">
-      <h2>Compétences principales</h2>
-      <div class="ability">
-        <div class="abil1"><img src="../assets/image/moi.jpg" alt="">
-          <h3>blabala</h3>
-        </div>
-        <div class="abil2"><img src="../assets/image/moi.jpg" alt="">
-          <h3>blabala</h3>
-        </div>
-        <div class="abil3"><img src="../assets/image/moi.jpg" alt="">
-          <h3>blabala</h3>
-        </div>
-        <div class="abil4"><img src="../assets/image/moi.jpg" alt="">
-          <h3>blabala</h3>
+      <div class="slide2 img_slider">
+        <div class="card">
+          <h1>mon</h1>
         </div>
       </div>
-    </aside>
+      <div class="slide3 img_slider">
+        <div class="card">
+          <h1>reuf</h1>
+        </div>
+      </div>
+
+      <div class="suivant">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+    </div>
   </section>
   <section id="xp">
   </section>
@@ -85,6 +77,8 @@
   </section>
   <section id="Portfolio"></section>
 
+
+  <script src="../js/slider.js"></script>
 </body>
 
 </html>
