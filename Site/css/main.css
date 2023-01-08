@@ -71,7 +71,7 @@ header {
   background-image: url(../assets/image/Illustration_sans_titre.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 5vh;
+  padding-bottom: 15vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -225,7 +225,7 @@ header div button {
 #profil #bouton {
   width: 100%;
   position: absolute;
-  top: 191vh;
+  top: 185vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -325,11 +325,9 @@ header div button {
 }
 #profil .slider .img_slider {
   opacity: 0;
-  transition: 0.5s;
 }
 #profil .slider .active {
   opacity: 1;
-  transition: 0.5s;
 }
 #profil .slider .suivant,
 #profil .slider .precedent {
@@ -370,7 +368,7 @@ header div button {
 .slide3 .xp,
 .slide3 .school {
   height: 100%;
-  padding: 4vh 5px;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -424,7 +422,13 @@ header div button {
 .portfolio #recap #content ul li i {
   font-size: 26px;
 }
-.portfolio #recap div button {
+.portfolio #recap .back {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 285vh;
+}
+.portfolio #recap .back button {
   background-color: #ececec;
   border: 0;
   border-radius: 10px;

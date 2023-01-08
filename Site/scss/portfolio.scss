@@ -43,7 +43,11 @@
                 }
             }
         }
-        div{
+        .back{
+            position: absolute;
+            width: 90%;
+            left: 0;
+            top: 285vh;
             button {
                 background-color: $secondary-color;
                 border: 0;

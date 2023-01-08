@@ -7,7 +7,7 @@
     #bouton{
         width: 100%;
         position: absolute;
-        top: 191vh; 
+        top: 185vh; 
         display: flex;
         justify-content: space-evenly; 
     }
@@ -131,12 +131,11 @@
 
         .img_slider {
             opacity: 0;
-            transition: 0.5s;
         }
 
         .active {
             opacity: 1;
-            transition: 0.5s;
+
         }
 
         .suivant,
