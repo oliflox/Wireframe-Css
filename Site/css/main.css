@@ -31,12 +31,15 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
-p,
 h4 {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
   font-family: "MonoRegular";
 }
 
@@ -59,7 +62,7 @@ section {
 }
 
 .MT {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 header {
@@ -67,7 +70,7 @@ header {
   background-image: url(../assets/image/Illustration_sans_titre.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -283,13 +286,13 @@ header div button {
   background-color: rgba(201, 60, 77, 0.6509803922);
   border-radius: 15px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #profil .slider .card #ability .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin-top: 30px;
+  margin-top: 15px;
   gap: 20px;
 }
 #profil .slider .card #ability .container img {
@@ -327,35 +330,31 @@ header div button {
   left: 0.6rem;
 }
 
-.slide2 h1 {
+.slide2 h1, .slide3 h1 {
   text-align: center;
 }
-.slide2 .xp {
-  height: 100%;
-  padding: 20px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.slide2 .xp h4 {
-  font-weight: normal;
-}
-.slide2 .xp .box {
-  background-color: grey;
+.slide2 .box, .slide3 .box {
+  color: white;
+  background-color: rgba(201, 60, 77, 0.7607843137);
   padding: 10px 15px;
   border-radius: 15px;
   display: flex;
   gap: 20px;
 }
-.slide2 .xp .box img {
+.slide2 .box img, .slide3 .box img {
   width: 9vh;
   height: 9vh;
   border-radius: 50%;
 }
-.slide2 .xp .box div {
+.slide2 .xp, .slide2 .school, .slide3 .xp, .slide3 .school {
+  height: 100%;
+  padding: 4vh 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.slide2 .xp h4, .slide2 .school h4, .slide3 .xp h4, .slide3 .school h4 {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=main.css.map */

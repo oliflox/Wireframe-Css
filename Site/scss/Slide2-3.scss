@@ -1,0 +1,36 @@
+.slide2,.slide3 {
+    h1 {
+        text-align: center;
+    }
+
+    .box {
+        color: white;
+        background-color: #c93c4dc2;
+        padding: 10px 15px;
+        border-radius: 15px;
+        display: flex;
+        gap: 20px;
+
+        img {
+            width: 9vh;
+            height: 9vh;
+            border-radius: 50%;
+        }
+
+
+    }
+
+    .xp, .school {
+        height: 100%;
+        padding:4vh 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h4 {
+            font-weight: normal;
+        }
+
+
+    }
+}
