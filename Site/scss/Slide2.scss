@@ -1,26 +1,35 @@
-.slide2{
-    h1{
+.slide2 {
+    h1 {
         text-align: center;
     }
-    .xp{
+    .xp {
         height: 100%;
-        padding: 20px 0;
+        padding: 20px 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #c93c4da6;
-        .box{
-            img{
-                width: 12vh;
-                height: 12vh;
+        h4{
+            font-weight: normal;
+        }
+        .box {
+            background-color: grey;
+            padding: 10px 15px;
+            border-radius: 15px;
+            img {
+                width: 9vh;
+                height: 9vh;
+                border-radius: 50%;
             }
+
             display: flex;
             gap: 20px;
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
             }
         }
     }
+
 }

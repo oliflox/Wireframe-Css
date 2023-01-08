@@ -1,7 +1,7 @@
 #profil {
     background-color: $secondary-color;
-    background-position: 0 65vh, center;
-    background-image: url(../assets/image/Illustration_sans_titre.png),url(../assets/image/beans.png);
+    background-image: url(../assets/image/beans.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -11,6 +11,10 @@
             height: 100%;
             width: 100%;
             text-align: center;
+            background-image: url(../assets/image/Illustration_sans_titre.png);
+            background-position: 0 65vh,  center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .card {

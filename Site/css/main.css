@@ -23,7 +23,7 @@ h3 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h2 {
@@ -34,7 +34,8 @@ h3 {
   font-size: 18px;
 }
 
-p {
+p,
+h4 {
   font-size: 16px;
   font-family: "MonoRegular";
 }
@@ -212,8 +213,8 @@ header div button {
 }
 #profil {
   background-color: #ececec;
-  background-position: 0 65vh, center;
-  background-image: url(../assets/image/Illustration_sans_titre.png), url(../assets/image/beans.png);
+  background-image: url(../assets/image/beans.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -224,6 +225,10 @@ header div button {
   height: 100%;
   width: 100%;
   text-align: center;
+  background-image: url(../assets/image/Illustration_sans_titre.png);
+  background-position: 0 65vh, center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #profil .slider .card {
   object-fit: cover;
@@ -327,24 +332,30 @@ header div button {
 }
 .slide2 .xp {
   height: 100%;
-  padding: 20px 0;
+  padding: 20px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(201, 60, 77, 0.6509803922);
+}
+.slide2 .xp h4 {
+  font-weight: normal;
 }
 .slide2 .xp .box {
+  background-color: grey;
+  padding: 10px 15px;
+  border-radius: 15px;
   display: flex;
   gap: 20px;
 }
 .slide2 .xp .box img {
-  width: 12vh;
-  height: 12vh;
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
 }
 .slide2 .xp .box div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=main.css.map */
