@@ -1,0 +1,40 @@
+.portfolio {
+    #thumbnail {
+        height: 45vh;
+        background-image: url(../assets/image/1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+        padding: 2vh 0;
+    }
+
+    #recap {
+        height: 55vh;
+
+        #title {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+    }
+
+
+    .remove{
+        display: none;
+    } 
+    .underline {
+        text-decoration: underline grey 2px;
+        text-underline-offset: 8px;
+    }
+
+
+}
