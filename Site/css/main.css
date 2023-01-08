@@ -111,7 +111,7 @@ header div#discover {
   justify-content: center;
 }
 header div#discover button {
-  background-color: #ececec;
+  background-color: #dbdbdb;
   border: 0;
   border-radius: 10px;
   padding: 5px 15px;
@@ -224,7 +224,7 @@ header div#discover button {
   }
 }
 #profil {
-  background-color: #ececec;
+  background-color: #dbdbdb;
   background-image: url(../assets/image/beans.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +238,7 @@ header div#discover button {
   justify-content: space-evenly;
 }
 #profil div button {
-  background-color: #ececec;
+  background-color: #dbdbdb;
   border: 0;
   border-radius: 10px;
   font-size: 16px;
@@ -436,7 +436,7 @@ header div#discover button {
   top: 283vh;
 }
 .portfolio #recap .back button {
-  background-color: #ececec;
+  background-color: #dbdbdb;
   border: 0;
   border-radius: 10px;
   font-size: 16px;
