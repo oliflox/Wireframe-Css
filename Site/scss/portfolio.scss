@@ -1,7 +1,7 @@
 .portfolio {
     #thumbnail {
         height: 45vh;
-        background-image: url(../assets/image/1.png);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.021),rgba(8, 5, 5, 0.596)),url(../assets/image/ldiro.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -14,16 +14,47 @@
 
     #recap {
         height: 55vh;
-
+        padding-bottom: 5vh;
+        padding:0 5vh 5vh 5vh ;
         #title {
             display: flex;
             justify-content: space-around;
 
             div {
                 text-align: center;
-                padding: 10px 0;
+                padding: 15px 0;
                 width: 100%;
             }
+        }
+
+        #content{
+            margin: 20px 0;
+            background-color: $primary-fade;
+            border-radius: 15px;
+            padding: 15px;
+            ul{
+                line-height: 45px;
+                li{
+                    font-size: 18px;
+                    list-style: none;
+                    i{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        div{
+            button {
+                background-color: $secondary-color;
+                border: 0;
+                border-radius: 10px;
+                font-size: 16px;
+                font-family: "MonoBold";
+                display: block;
+                margin-left: auto;
+                padding: 5px 15px;
+
+              }
         }
     }
 

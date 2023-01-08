@@ -4,6 +4,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    #bouton{
+        width: 100%;
+        position: absolute;
+        top: 191vh; 
+        display: flex;
+        justify-content: space-evenly; 
+    }
+
+    div{
+        button {
+            background-color: $secondary-color;
+            border: 0;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: "MonoBold";
+            display: block;
+            margin-left: auto;
+            padding: 5px 15px;
+
+          }
+    }
 
     .slider {
         height: 100vh;
@@ -81,7 +102,7 @@
 
             #ability {
                 text-align: center;
-                background-color: #c93c4da6;
+                background-color: $primary-fade;
                 border-radius: 15px;
                 padding: 20px 10px;
                 margin-top: 30px;

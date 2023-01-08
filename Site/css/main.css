@@ -105,7 +105,7 @@ header div {
 header div button {
   background-color: #ececec;
   border: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px 15px;
   font-size: 20px;
   font-family: "MonoBold";
@@ -222,6 +222,23 @@ header div button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#profil #bouton {
+  width: 100%;
+  position: absolute;
+  top: 191vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+#profil div button {
+  background-color: #ececec;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "MonoBold";
+  display: block;
+  margin-left: auto;
+  padding: 5px 15px;
+}
 #profil .slider {
   height: 100vh;
 }
@@ -336,8 +353,7 @@ header div button {
 }
 .slide2 .box,
 .slide3 .box {
-  color: white;
-  background-color: rgba(201, 60, 77, 0.7607843137);
+  background-color: rgba(201, 60, 77, 0.6509803922);
   padding: 10px 15px;
   border-radius: 15px;
   display: flex;
@@ -368,7 +384,7 @@ header div button {
 
 .portfolio #thumbnail {
   height: 45vh;
-  background-image: url(../assets/image/1.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.021), rgba(8, 5, 5, 0.596)), url(../assets/image/ldiro.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,6 +396,8 @@ header div button {
 }
 .portfolio #recap {
   height: 55vh;
+  padding-bottom: 5vh;
+  padding: 0 5vh 5vh 5vh;
 }
 .portfolio #recap #title {
   display: flex;
@@ -387,8 +405,34 @@ header div button {
 }
 .portfolio #recap #title div {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   width: 100%;
+}
+.portfolio #recap #content {
+  margin: 20px 0;
+  background-color: rgba(201, 60, 77, 0.6509803922);
+  border-radius: 15px;
+  padding: 15px;
+}
+.portfolio #recap #content ul {
+  line-height: 45px;
+}
+.portfolio #recap #content ul li {
+  font-size: 18px;
+  list-style: none;
+}
+.portfolio #recap #content ul li i {
+  font-size: 26px;
+}
+.portfolio #recap div button {
+  background-color: #ececec;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "MonoBold";
+  display: block;
+  margin-left: auto;
+  padding: 5px 15px;
 }
 .portfolio .remove {
   display: none;
