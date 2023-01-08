@@ -73,12 +73,15 @@ header {
   background-color: #c93c4c;
   background-image: url(../assets/image/Illustration_sans_titre.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  padding-bottom: 15vh;
+  padding: 15vh 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
 }
 header .top-nav {
   z-index: 100;
@@ -94,18 +97,20 @@ header .top-nav {
   background-color: rgba(201, 60, 77, 0.568627451);
 }
 header .top-nav div#logo {
-  color: white;
   font-family: "Kranafat";
   background-color: #c93c4c;
   padding: 5px 10px;
   border-radius: 10px;
   letter-spacing: 2px;
 }
-header div {
+header .top-nav div#logo a {
+  color: white;
+}
+header div#discover {
   display: flex;
   justify-content: center;
 }
-header div button {
+header div#discover button {
   background-color: #ececec;
   border: 0;
   border-radius: 10px;
