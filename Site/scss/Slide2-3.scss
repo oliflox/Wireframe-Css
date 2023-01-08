@@ -1,4 +1,5 @@
-.slide2,.slide3 {
+.slide2,
+.slide3 {
     h1 {
         text-align: center;
     }
@@ -13,16 +14,17 @@
 
         img {
             width: 9vh;
-            height: 9vh;
-            border-radius: 50%;
-        }
+            object-fit: contain;
+            aspect-ratio: 3/2;
 
+        }
 
     }
 
-    .xp, .school {
+    .xp,
+    .school {
         height: 100%;
-        padding:4vh 5px;
+        padding: 4vh 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
