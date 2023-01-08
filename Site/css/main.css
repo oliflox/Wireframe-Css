@@ -244,6 +244,7 @@ header div button {
 }
 #profil .slider .card #name {
   display: flex;
+  gap: 5vw;
 }
 #profil .slider .card #name img {
   width: 9vh;
